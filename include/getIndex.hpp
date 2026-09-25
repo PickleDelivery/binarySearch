@@ -1,1 +1,1 @@
-int getIndex(int arr[], int left, int right, int x) {
+int getIndex(int arr[], int left, int right, int x);

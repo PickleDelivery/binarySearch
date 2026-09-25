@@ -1,1 +1,1 @@
-int getRandomStep (int maxStep){
+int getRandomStep (int maxStep);
