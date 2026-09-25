@@ -7,3 +7,9 @@ Simple CLI command that creates a pre-sorted array of integers and asks the user
 ### Why I made this
 
 Learning cpp and git from scratch.
+
+### Compile command
+
+```
+g++ @compile_flags.txt src/*.cpp -o build/BinarySearch
+```
