@@ -1,0 +1,1 @@
+int getRnadomInt(int min, int max)
