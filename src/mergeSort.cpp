@@ -1,8 +1,28 @@
-#include "../include/merge.hpp"
+#include "merge.hpp"
+#include <iostream>
+#include <array>
+#include "getArraySize.hpp"
 
-int mergeSort (int arr[]){
+
+int mergeSort (std:array<int> arr){
+
+    std::cout << "Called mergeSort on this array";
+
     
-    int length = sizeof(arr);
+
+    
+    int length = getArraySize(arr);
+
+    std::cout << " with size of " << length << ":\n";
+
+    
+    for (int i = 0; i <= length; i++){
+        std::cout << arr[i];
+        std::cout << ", ";
+    }
+    std::cout << "\n";
+    
+
     if (length <= 1) return 0;
 
     int mid = length / 2;
@@ -24,5 +44,7 @@ int mergeSort (int arr[]){
     mergeSort(leftArr);
     mergeSort(rightArr);
     merge(leftArr, rightArr, arr);
+
+    return 0;
 }
 

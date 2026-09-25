@@ -1,7 +1,13 @@
-int merge (int leftArr[], int rightArr[], int arr[]){
+#include <iostream>
+#include <array>
+#include "getArraySize.hpp"
+
+int merge (std::array<int> leftArr, std::array<int> rightArr, std::array<int> arr){
+
+    std::cout << "Called merge...\n";
     
-    int leftSize = sizeof(arr) / 2;
-    int rightSize = sizeof(arr) - leftSize;
+    int leftSize = getArraySize(arr) / 2;
+    int rightSize = getArraySize(arr) - leftSize;
     int i = 0, left = 0, right = 0;
 
     while(left < leftSize && right < rightSize){
@@ -26,6 +32,8 @@ int merge (int leftArr[], int rightArr[], int arr[]){
             right++;
         }
     }
+
+    
     
     return 0;
 }

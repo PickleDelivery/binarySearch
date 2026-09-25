@@ -1,1 +1,3 @@
-int getRnadomInt(int min, int max)
+#pragma once
+
+int getRandomInt(int min, int max);

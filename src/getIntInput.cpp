@@ -1,7 +1,7 @@
 #include <iostream>
 #include <limits>
 
-int getValidatedInt(const std::string& prompt, int min, int max) {
+int getIntInput(const std::string& prompt, int min, int max) {
     int input_val;
     
     while (true) {
@@ -24,8 +24,8 @@ int getValidatedInt(const std::string& prompt, int min, int max) {
         }
 
         if (input_val < min || input_val > max){
-            std:cout << "Number must be in range of %i", min;
-            std:cout << " and %i.\/n", max;
+            std::cout << "Number must be in range of " << min;
+            std::cout << " and " << max <<",";
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             continue;
         }
