@@ -1,1 +1,5 @@
-int getIntInput(const std::string& prompt, int min, int max);
+#include <string>
+
+using namespace std;
+
+int getIntInput(const string& prompt, int min, int max);
